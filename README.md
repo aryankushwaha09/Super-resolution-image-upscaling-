@@ -109,7 +109,9 @@ The web interface will launch with the following options:
 
 ## 🌟 Sample Results
 
-![Architecture Diagram](architecture.png)
+![Architecture Diagram](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgMWpg6OEQZ2oNOkPKsTP8KecxbWEnVbPeJ2TLIT5RomO0hJ5VB3nUW1I&s=10)
+
+-we implemented 2 architecture based on the images in further version other two heavy deep  learning model will be implemented.
 
 **Comparative Analysis**:
 
@@ -131,6 +133,9 @@ The interface code is MIT licensed.
 ## 🤝 Contributing
 
 Contributions are welcome! Please open an issue to discuss proposed changes.
+thankyou 
+email us for any issues 
+```aryankushwaha7991@gmail.com ```
 
 ## 📚 References
 
