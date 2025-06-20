@@ -14,9 +14,9 @@ This repository implements a state-of-the-art image upscaling pipeline combining
 - **Face Enhancement**: Optional GFPGAN or CodeFormer integration for facial detail recovery
 - **Dynamic Denoising**: Adjustable denoising strength for optimal results
 - **Comparison Tools**: Built-in image slider for before/after comparison
-- **Efficient Processing**: Optimized for GPU acceleration with memory management
-  >[note]
-  >if the images are too blurry and dehaze use 2x model first then 4x
+- **Efficient Processing**: Optimized for GPU acceleration with memory management >
+>[!note]
+>if the images are too blurry and dehaze use 2x model first then 4x.
 ## 🛠 Technical Architecture
 
 ```mermaid
@@ -77,7 +77,7 @@ The web interface will launch with the following options:
 ## 🧠 Underlying Models
 
 ### Real-ESRGAN Variants
-<div align="centre">
+
 | Model Name | Best For | Parameters |
 |------------|----------|------------|
 | RealESRGAN_x4plus | General images | 16.7M |
@@ -85,7 +85,7 @@ The web interface will launch with the following options:
 | RealESRGAN_x4plus_anime_6B | Anime/illustrations | 6.4M |
 | RealESRGAN_x2plus | Moderate upscaling | 16.7M |
 | realesr-general-x4v3 | General purpose (balanced) | 32 conv |
-</div>
+
 ### Face Enhancement
 
 **GFPGANv1.3**:
@@ -133,10 +133,10 @@ The interface code is MIT licensed.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please open an issue to discuss proposed changes.
-thankyou 
-email us for any issues 
-[aryankushwaha7991@gmail.com](aryankushwaha7991@gmail.com)
+>[!note]
+>Contributions are welcome! Please open an issue to discuss proposed changes.
+thankyou email us for any issues 
+>[aryankushwaha7991@gmail.com](aryankushwaha7991@gmail.com)
 
 ## 📚 References
 
