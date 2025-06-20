@@ -15,7 +15,7 @@ This repository implements a state-of-the-art image upscaling pipeline combining
 - **Dynamic Denoising**: Adjustable denoising strength for optimal results
 - **Comparison Tools**: Built-in image slider for before/after comparison
 - **Efficient Processing**: Optimized for GPU acceleration with memory management
-[note](if the images are too blurry and dehaze use 2x model first then 4x)
+[!note](if the images are too blurry and dehaze use 2x model first then 4x)
 ## 🛠 Technical Architecture
 
 ```mermaid
