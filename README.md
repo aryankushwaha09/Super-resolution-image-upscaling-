@@ -14,7 +14,7 @@ This repository implements a state-of-the-art image upscaling pipeline combining
 - **Face Enhancement**: Optional GFPGAN or CodeFormer integration for facial detail recovery
 - **Dynamic Denoising**: Adjustable denoising strength for optimal results
 - **Comparison Tools**: Built-in image slider for before/after comparison
-- **Efficient Processing**: Optimized for GPU acceleration with memory management >
+- **Efficient Processing**: Optimized for GPU acceleration with memory management
 >[!note]
 >if the images are too blurry and dehaze use 2x model first then 4x.
 
@@ -125,8 +125,8 @@ The web interface will launch with the following options:
 ## Sample Results
 
 ![Architecture Diagram](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgMWpg6OEQZ2oNOkPKsTP8KecxbWEnVbPeJ2TLIT5RomO0hJ5VB3nUW1I&s=10)
-
--we implemented 2 architecture based on the images in further version other two heavy deep  learning model will be implemented.
+>[!note]
+>we implemented 2 architecture based on the images in further version other two heavy deep  learning model will be implemented.
 
 **Comparative Analysis**:
 
@@ -149,7 +149,7 @@ The interface code is MIT licensed.
 
 >[!note]
 >Contributions are welcome! Please open an issue to discuss proposed changes.
-thankyou email us for any issues 
+>email us for any issues 
 >[aryankushwaha7991@gmail.com](aryankushwaha7991@gmail.com)
 
 ##  References
