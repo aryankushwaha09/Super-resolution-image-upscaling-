@@ -1,14 +1,14 @@
 # Super-resolution-image-upscaling-
 
 
-## 📌 Overview
+## Overview
 
 This repository implements a state-of-the-art image upscaling pipeline combining Real-ESRGAN for general image super-resolution and CodeFormer/GFPGAN for face enhancement. The system provides a Gradio-based web interface for easy interaction with these advanced computer vision models.
 
 ![Sample Upscaling Demo](https://github.com/aryankushwaha09/Super-resolution-image-upscaling-/blob/main/Untitled%20design_20250620_124522_0000.png)  
 *Example of 4x upscaling with face enhancement (left: original, right: enhanced)*
 
-## 🚀 Key Features
+##  Key Features
 
 - **Multi-model Support**: Choose between different Real-ESRGAN variants optimized for different image types
 - **Face Enhancement**: Optional GFPGAN or CodeFormer integration for facial detail recovery
@@ -17,19 +17,32 @@ This repository implements a state-of-the-art image upscaling pipeline combining
 - **Efficient Processing**: Optimized for GPU acceleration with memory management >
 >[!note]
 >if the images are too blurry and dehaze use 2x model first then 4x.
-## 🛠 Technical Architecture
+
+## Technical Architecture
 
 ```mermaid
 graph TD
-    A[Input Image] --> B{Model Selection}
-    B -->|RealESRGAN| C[General Upscaling]
+    A[ Input Image] --> B{ Model Selection}
+    B -->|RealESRGAN| C[ General Upscaling]
     B -->|CodeFormer| D[Face Enhancement]
-    C --> E[Output Image]
+    C --> E[ Output Image]
     D --> E
-    E --> F[Comparison Tool]
+    E --> F[ Comparison Tool]
     F --> G[Final Result]
-```
 
+    %% Node styling with fill & stroke
+    style A fill:#d1c4e9,stroke:#42a5f5,stroke-width:2px
+    style B fill:#bbdefb,stroke:#1e88e5,stroke-width:2px
+    style C fill:#c8e6c9,stroke:#43a047,stroke-width:2px
+    style D fill:#f8bbd0,stroke:#e91e63,stroke-width:2px
+    style E fill:#ffe082,stroke:#ffb300,stroke-width:2px
+    style F fill:#ffccbc,stroke:#ff5722,stroke-width:2px
+    style G fill:#d1c4e9,stroke:#673ab7,stroke-width:2px
+
+    %% Text color override to black
+    classDef blackText fill:none,color:#000,font-weight:bold;
+    class A,B,C,D,E,F,G blackText;
+```
 ### Core Components:
 
 1. **Real-ESRGAN Backbone**:
@@ -46,7 +59,7 @@ graph TD
    - Dynamic tile processing for large images
    - Half-precision inference for memory efficiency
 
-## 📦 Installation
+##  Installation
 
 ```bash
 # Clone repository
@@ -60,7 +73,7 @@ pip install -r requirements.txt
 python download_models.py
 ```
 
-## 🖥 Usage
+##  Usage
 
 ```python
 python app.py
@@ -74,7 +87,7 @@ The web interface will launch with the following options:
 4. Choose face enhancement method (None/GFPGAN/CodeFormer)
 5. For CodeFormer: Set restoration weight (0.0 for maximum enhancement)
 
-## 🧠 Underlying Models
+##  Underlying Models
 
 ### Real-ESRGAN Variants
 
@@ -85,6 +98,7 @@ The web interface will launch with the following options:
 | RealESRGAN_x4plus_anime_6B | Anime/illustrations | 6.4M |
 | RealESRGAN_x2plus | Moderate upscaling | 16.7M |
 | realesr-general-x4v3 | General purpose (balanced) | 32 conv |
+
 
 ### Face Enhancement
 
@@ -98,7 +112,7 @@ The web interface will launch with the following options:
 - Weight control for fidelity vs enhancement
 - Integrated face upsampling
 
-## ⚙ Performance Benchmarks
+##  Performance Benchmarks
 
 | Operation | 512x512 Input | 1024x1024 Input |
 |-----------|---------------|-----------------|
@@ -108,7 +122,7 @@ The web interface will launch with the following options:
 
 *Tested on NVIDIA V100 GPU with 16GB memory*
 
-## 🌟 Sample Results
+## Sample Results
 
 ![Architecture Diagram](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgMWpg6OEQZ2oNOkPKsTP8KecxbWEnVbPeJ2TLIT5RomO0hJ5VB3nUW1I&s=10)
 
@@ -122,7 +136,7 @@ The web interface will launch with the following options:
 | SSIM ↑ | - | 0.82 | 0.85 |
 | FID ↓ | - | 35.2 | 28.4 |
 
-## 📜 License
+##  License
 
 This project is built upon open-source models with the following licenses:
 - Real-ESRGAN: BSD 3-Clause
@@ -131,14 +145,14 @@ This project is built upon open-source models with the following licenses:
 
 The interface code is MIT licensed.
 
-## 🤝 Contributing
+##  Contributing
 
 >[!note]
 >Contributions are welcome! Please open an issue to discuss proposed changes.
 thankyou email us for any issues 
 >[aryankushwaha7991@gmail.com](aryankushwaha7991@gmail.com)
 
-## 📚 References
+##  References
 
 1. Wang et al. "Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data" (2021)
 2. Zhou et al. "CodeFormer: Robust Face Restoration via Learned Codebooks" (2022)
