@@ -1,11 +1,11 @@
 # Super-resolution-image-upscaling-
-# Advanced Image Upscaler with Real-ESRGAN and CodeFormer
+
 
 ## 📌 Overview
 
 This repository implements a state-of-the-art image upscaling pipeline combining Real-ESRGAN for general image super-resolution and CodeFormer/GFPGAN for face enhancement. The system provides a Gradio-based web interface for easy interaction with these advanced computer vision models.
 
-![Sample Upscaling Demo](sample_comparison.png)  
+![Sample Upscaling Demo](https://github.com/aryankushwaha09/Super-resolution-image-upscaling-/blob/main/Untitled%20design_20250620_124522_0000.png)  
 *Example of 4x upscaling with face enhancement (left: original, right: enhanced)*
 
 ## 🚀 Key Features
